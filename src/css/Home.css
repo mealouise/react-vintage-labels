@@ -1,0 +1,16 @@
+/* @import url('https://fonts.googleapis.com/css?family=Redressed&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap');
+
+.home__header {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 42px;
+    font-family:'Berkshire Swash', cursive;
+    font-weight: lighter;
+}
+.home__description {
+    text-align: center;
+    font-family:'Berkshire Swash', cursive;
+    font-size: 25px;
+    font-weight: 300;
+}
