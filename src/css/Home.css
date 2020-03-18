@@ -12,4 +12,29 @@
     text-align: center;
     font-size: 22px;
     font-weight: 300;
+    margin-bottom: 120px;
+}
+
+.home__all-listings {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    height: 400px;
+    width: 33%;
+    background-color: white;
+    /* padding: 30px; */
+    box-sizing: border-box;
+}
+
+.home__price {
+}
+
+.home__description {
+    font-size:20px;
+    font-family:'Berkshire Swash', cursive;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 24px;
+
 }

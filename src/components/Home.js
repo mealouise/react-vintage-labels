@@ -5,17 +5,13 @@ import axios from 'axios';
 
 class Home extends React.Component {
     
-   state = {
-            listings: []
-        }
-    // componentDidMount() {
-    //     axios.get(`http://localhost:5000/get-listings`)
-    //     .then(res => {
-    //         console.log(res);
-    //         this.setState({ listings: res.data });
-    //     });
-    // }
-    // }
+    state = {
+        listings: []
+    }
+
+    componentDidMount() {
+       this.getListings();
+    }
 
     getListings() {
         axios.get(`http://localhost:5000/get-listings`)
@@ -37,15 +33,16 @@ class Home extends React.Component {
                 <h1 className="home__header">Rare & Vintage Advertising Epherma</h1>
                 <h2 className="home__subheader">from Soda Pop, Jam, Ink and Pharmacy Labels</h2>
             </div>
+
             <div className="home__results">
-            <button onClick={this.getListings.bind(this)}>hello</button>
             {
                 this.state.listings.map((result) => {
                     return (
-                        <div>
+                        <div className="home__all-listings">
                             <img src={result.image} alt="listing"/>
-                            <h2>{result.decription}</h2>
-                            <h3>{result.price}</h3>
+                            <h2 className="home__description">{result.description}</h2>
+                            <h3 className="home__price">£{result.price}</h3>
+                            {/* <button>Add to Basket</button> */}
                         </div>
                     )
                 })
