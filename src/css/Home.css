@@ -8,9 +8,8 @@
     font-family:'Berkshire Swash', cursive;
     font-weight: lighter;
 }
-.home__description {
+.home__subheader {
     text-align: center;
-    font-family:'Berkshire Swash', cursive;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 300;
 }
